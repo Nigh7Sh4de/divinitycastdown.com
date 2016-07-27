@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divinity Cast Down</title>
+</head>
+<body ng-app="dcdcom" >
+    <div class="main-container" ng-controller="MainCtrl">
+        <nav id="mainNavBar" class="navbar navbar-science">
+            <div class="container">
+                <a href="#/"><img src="images/dcd_banner_bright.png" /></a>
+                <ul class="nav navbar-nav pull-xs-right cl-effect-12">
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/news'}"><a href="#/news" class="nav-link">News</a></li>
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/shows'}"><a href="#/shows" class="nav-link">Shows</a></li>
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/bio'}"><a href="#/bio" class="nav-link">Bio</a></li>
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/photos'}"><a href="#/photos" class="nav-link">Photos</a></li>
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/download'}"><a href="#/download" class="nav-link">Download</a></li>
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/lyrics'}"><a href="#/lyrics" class="nav-link">Lyrics</a></li>
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/merch'}"><a href="#/merch" class="nav-link">Merch</a></li>
+                    <li class="nav-item" data-ng-class="{active: window.location.hash == '#/contact'}"><a href="#/contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="mainView">
+            <div data-ng-view></div>
+            <div data-ng-include="'views/footer.html'"></div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="css/vendor/tether.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--<link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/shows.css">
+    <link rel="stylesheet" href="css/bio.css">
+    <link rel="stylesheet" href="css/photos.css">
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/lyrics.css">
+    <link rel="stylesheet" href="css/merch.css">-->
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
+    <script src="js/vendor/tether.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/app.js"></script> 
+    <script src="js/controllers/mainCtrl.js"></script> 
+    <script src="js/controllers/newsCtrl.js"></script>
+    <script src="js/controllers/showsCtrl.js"></script>
+    <script src="js/controllers/bioCtrl.js"></script>
+    <script src="js/controllers/photosCtrl.js"></script>
+    <script src="js/controllers/downloadCtrl.js"></script>
+    <script src="js/controllers/lyricsCtrl.js"></script>
+    <script src="js/controllers/merchCtrl.js"></script>
+    <script src="js/controllers/contactCtrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.main-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container #mainView {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+nav#mainNavBar {
+    z-index: 1000;
+}
+
+.container {
+    padding: 5% 10%;
+}
+
+.parallax {
+    position: 'relative';
+    background: no-repeat fixed center 0;
+}
+
+.main-banner {
+    position: relative;
+    background-image: url('../images/hell-over-munich-dark.jpg');
+    height: 50vh;
+    color: white;
+}
+
+.main-banner .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    padding: 10%;
+    margin: auto;
+}
+
+.main-banner .container h2 {
+    padding-left: 20px;
+    font-style: italic;
+}
+
+#homePageContainer .main-banner {
+    height: 100vh;
+}
+
+img.social {
+    width: 24px;
+    height: 24px;
+}

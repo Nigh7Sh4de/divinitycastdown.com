@@ -1,0 +1,27 @@
+{
+  "name": "divinitycastdown",
+  "version": "0.0.0",
+  "description": "A website for the Toronto metal band Divinity Cast Down",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigh7sh4de/divinitycastdown.git"
+  },
+  "author": "nigh7sh4de",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigh7sh4de/divinitycastdown/issues"
+  },
+  "homepage": "https://github.com/nigh7sh4de/divinitycastdown#readme",
+  "dependencies": {
+    "angular": "1.5.7",
+    "angular-route": "1.5.7",
+    "bootstrap": "4.0.0-alpha.2",
+    "jquery": "2.2.4",
+    "tether": "1.3.2"
+  }
+}

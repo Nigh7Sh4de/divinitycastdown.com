@@ -1,0 +1,56 @@
+nav.navbar-science {
+    height: 7rem;
+    width: 100%;
+    position: fixed;
+    transition: height 0.5s;
+    background: none;
+    border-radius: 0;
+}
+
+nav.navbar-science .container {
+    padding: 0;
+}
+
+nav.navbar-science.navbar-fixed {
+    height: 4rem;
+    background-image: url('../images/hell-over-munich-dark.jpg');
+}
+
+nav.navbar-science img {
+    height: 80%;
+    display: inline;
+    position: absolute;
+}
+
+nav.navbar-science .nav-item {
+    color: white;
+    border-bottom: 0.12rem solid lightgrey;
+    background-image: url('../images/dcd_logo_sm.png');
+    background-size: 2.3rem;
+    background-repeat: no-repeat;
+    background-position: center 3rem;
+    height: 3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition:background-position .2s ease-out, border-bottom .2s ease-in;
+    -moz-transition:background-position .2s ease-out, border-bottom .2s ease-in;
+    -o-transition:background-position .2s ease-out, border-bottom .2s ease-in;
+    transition:background-position .2s ease-out, border-bottom .2s ease-in;
+}
+
+nav.navbar-science .nav-item a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+
+nav.navbar-science .nav-item:hover {
+    background-position-y: 0;
+}
+
+nav.navbar-science .nav-item.active {
+    border-bottom-width: 0.36rem;
+}
