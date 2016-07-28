@@ -1,0 +1,26 @@
+#newsPagePosts {
+    background-image: url('../images/sheet_music_red_xl.jpg');
+    
+}
+
+.post {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.post .date {
+    width: 100px;
+    color: #bbb;
+    display: table-cell;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3%;
+    font-style: italic;
+}
+
+.post .content {
+    display: table-cell;
+    color: #eee;
+    border-radius: 3px 3px 3px 3px;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
