@@ -51,7 +51,7 @@
     
     var setParallax = function() {
         var vh2 = window.innerHeight / 2;
-        var scrollPoint = vh2 - 250; 
+        var scrollPoint = vh2 - 280; 
         if ($(window).scrollTop() >= scrollPoint)
             navbar.addClass("navbar-fixed parallax");
         else
