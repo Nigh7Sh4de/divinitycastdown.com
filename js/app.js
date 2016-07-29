@@ -20,6 +20,22 @@
             templateUrl: 'views/bio.html',
             controller: 'BioCtrl'
         })
+        .when('/bio/rob', {
+            templateUrl: 'views/bio.html',
+            controller: 'BioCtrl'
+        })
+        .when('/bio/leo', {
+            templateUrl: 'views/bio.html',
+            controller: 'BioCtrl'
+        })
+        .when('/bio/marius', {
+            templateUrl: 'views/bio.html',
+            controller: 'BioCtrl'
+        })
+        .when('/bio/dennis', {
+            templateUrl: 'views/bio.html',
+            controller: 'BioCtrl'
+        })
         .when('/photos', {
             templateUrl: 'views/photos.html',
             controller: 'PhotosCtrl'

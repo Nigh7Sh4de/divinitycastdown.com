@@ -8,19 +8,126 @@
         </div>
     </section>
     <section id="members">
-        <div class="row">
-            <a href="#/bio/rob" class="col-xs-3 profile" id="rob">
-                <span class="name">Rob</span>
-            </a>
-            <a href="#/bio/leo" class="col-xs-3 profile" id="leo">
-                <span class="name">Leo</span>
-            </a>
-            <a href="#/bio/marius" class="col-xs-3 profile" id="marius">
-                <span class="name">Marius</span>
-            </a>
-            <a href="#/bio/dennis" class="col-xs-3 profile" id="dennis">
-                <span class="name">Dennis</span>
-            </a>
+        <a ng-click="viewBio('rob')" ng-show="!member || member == 'rob'" class="profile" ng-class="{active: member == 'rob'}" id="rob">
+            <span derp-ng-show="!member" ng-style="{'font-style': member ? 'italic' : 'normal'}" class="name">{{member ? "Back" : "Rob"}}</span>
+        </a>
+        <a ng-click="viewBio('leo')" ng-show="!member || member == 'leo'" class="profile" ng-class="{active: member == 'leo'}" id="leo">
+            <span derp-ng-show="!member" ng-style="{'font-style': member ? 'italic' : 'normal'}" class="name">{{member ? "Back" : "Leo"}}</span>
+        </a>
+        <a ng-click="viewBio('marius')" ng-show="!member || member == 'marius'" class="profile" ng-class="{active: member == 'marius'}" id="marius">
+            <span derp-ng-show="!member" ng-style="{'font-style': member ? 'italic' : 'normal'}" class="name">{{member ? "Back" : "Marius"}}</span>
+        </a>
+        <a ng-click="viewBio('dennis')" ng-show="!member || member == 'dennis'" class="profile" ng-class="{active: member == 'dennis'}" id="dennis">
+            <span derp-ng-show="!member" ng-style="{'font-style': member ? 'italic' : 'normal'}" class="name">{{member ? "Back" : "Dennis"}}</span>
+        </a>
+
+        <div ng-show="member == 'rob'" class="profile-details parallax" style="background-image: url('../images/rob_cover.jpg')">
+            <div class="container">
+                <div class="profile-detail full-name">
+                    <span class="profile-detail-key">Name</span>
+                    <span class="profile-detail-value">Rob Adams</span>
+                </div>
+                <div class="profile-detail position">
+                    <span class="profile-detail-key">Position</span>
+                    <span class="profile-detail-value">Guitar and Vocals</span>
+                </div>
+                <div class="profile-detail description">
+                    <span class="profile-detail-key">Description</span>
+                    <span class="profile-detail-value">Originally from New Brunswick, I moved to Ontario a couple of years ago to embark on a new adventure. I met Leo, my musical brother-in-arms, in June 2015 and we started jamming/writing songs immediately. Divinity Cast Down was officially created in August 2015. In addition to playing music, I am an amateur skydiver with 39 jumps and snake charmer to my python, Monty.</span>
+                </div>
+                <div class="profile-detail influences">
+                    <span class="profile-detail-key">Influences</span>
+                    <span class="profile-detail-value">Slayer, Dissection, Iron Maiden, Black Sabbath, Heaven and Hell, Arch Enemy, Cannibal Corpse, Metallica, Judas Priest, Nevermore, Megadeth, Randy Rhoads, and tons of others</span>
+                </div>
+                <div class="profile-detail current-listenings">
+                    <span class="profile-detail-key">Current Listenings</span>
+                    <span class="profile-detail-value">Legion of the Damned, Keep of Kalessin, Belphegor, Vader, Celtic Frost, Bloodbath, Candlemass, Flight of the Conchords</span>
+                </div>
+                <div class="profile-detail gear">
+                    <span class="profile-detail-key">Gear</span>
+                    <span class="profile-detail-value">B.C. Rich Warlock Custom ("Julian"), Gibson Robot X-Plorer ("Skwisgaar"), B.C. Rich ST-III ("China"), BOSS GT-6, Mesa Single Rectifier Head, Crate GX 4x12 Cabinet, Dunlop/Tortex Sharp picks (1.14mm)</span>
+                </div>
+            </div>
+        </div>
+        <div ng-show="member == 'leo'" class="profile-details parallax" style="background-image: url('../images/leo_cover.jpg')">
+            <div class="container">
+                <div class="profile-detail full-name">
+                    <span class="profile-detail-key">Name</span>
+                    <span class="profile-detail-value">Leo Halajda</span>
+                </div>
+                <div class="profile-detail position">
+                    <span class="profile-detail-key">Position</span>
+                    <span class="profile-detail-value">Drums</span>
+                </div>
+                <div class="profile-detail description">
+                    <span class="profile-detail-key">Description</span>
+                    <span class="profile-detail-value">I'm from Poland and came to Toronto in 2000. Playing Drums since 1986. I've played in a couple of bands, but it was not going in the direction that I wanted it to. I felt I was being pushed to the edge and was ready to quit drumming. Thanks to my wife, Chris, who turned the basement into a rehearsal place. She has been my biggest supporter and would never let me give up, because of her I am still playing drums. I met Rob and finally someone who, like me - seriously dedicated and a professional musician with similar taste in music; we work well together! I'm a huge cat lover and hope all those cats that we have in the house, they are not going to scratch my face off for the loud noise that we make every rehearsal.</span>
+                </div>
+                <div class="profile-detail influences">
+                    <span class="profile-detail-key">Influences</span>
+                    <span class="profile-detail-value">Hate, Decapitated, Vader, Behemoth, Amon Amarth, Cannibal Corpse, Pantera, Fear Factory, Obituary, Havok, Soulfly, and many more.</span>
+                </div>
+                <div class="profile-detail gear">
+                    <span class="profile-detail-key">Gear</span>
+                    <span class="profile-detail-value">8 Piece Tama Rockstar, Zildjian Cymbals, Pearl Hardware</span>
+                </div>
+            </div>
+        </div>
+        <div ng-show="member == 'marius'" class="profile-details parallax" style="background-image: url('../images/marius_cover.jpg')">
+            <div class="container">
+                <div class="profile-detail full-name">
+                    <span class="profile-detail-key">Name</span>
+                    <span class="profile-detail-value">Marius Necula</span>
+                </div>
+                <div class="profile-detail position">
+                    <span class="profile-detail-key">Position</span>
+                    <span class="profile-detail-value">Bass</span>
+                </div>
+                <div class="profile-detail description">
+                    <span class="profile-detail-key">Description</span>
+                    <span class="profile-detail-value">Originally from Romania, I came to Canada in 2006. I've played guitar for over 20 years and I enjoyed playing with a few blues, classic rock and metal bands back in Romania. After being away from the stage presence for over 10 years, I decided to go back and try the Canadian experience. I met Rob and Leo who were looking for a bass player to complete the band (Divinity Cast Down) lineup and after few rehearsals/auditions, I've been officially asked to join the band.</span>
+                </div>
+                <div class="profile-detail influences">
+                    <span class="profile-detail-key">Influences</span>
+                    <span class="profile-detail-value">My Dying Bride, Cannibal Corpse, Elend, Beyond Creation, F. Schubert, J. S. Bach, Faceless, Opeth, Depeche Mode, Nile, and many more.</span>
+                </div>
+                <div class="profile-detail current-listenings">
+                    <span class="profile-detail-key">Current Listenings</span>
+                    <span class="profile-detail-value">My Dying Bride, Beyond Creation, F. Schubert, Elend, Faceless</span>
+                </div>
+                <div class="profile-detail gear">
+                    <span class="profile-detail-key">Gear</span>
+                    <span class="profile-detail-value">Yamaha RBX 375, Gallien Krueger MB500, Avatar B212, Zoom B1XON</span>
+                </div>
+            </div>
+        </div>
+        <div ng-show="member == 'dennis'" class="profile-details parallax" style="background-image: url('../images/dennis_cover.jpg')">
+            <div class="container">
+                <div class="profile-detail full-name">
+                    <span class="profile-detail-key">Name</span>
+                    <span class="profile-detail-value">Dennis Plotnik</span>
+                </div>
+                <div class="profile-detail position">
+                    <span class="profile-detail-key">Position</span>
+                    <span class="profile-detail-value">Guitar and Backup Vocals</span>
+                </div>
+                <div class="profile-detail description">
+                    <span class="profile-detail-key">Description</span>
+                    <span class="profile-detail-value">I grew up in the suburbs outside Toronto, ON. I've been playing guitar since 2007 and play a variety of styles from classical and jazz to rock and metal. Ever since I first listened to Metallica I knew metal was what I really wanted to listen to and create. I have played a variety of instruments in several school bands including concert and symphonic bands as well as jazz and rock bands. Besides playing guitar I am also a software developer and a competitor in lifesaving sport.</span>
+                </div>
+                <div class="profile-detail influences">
+                    <span class="profile-detail-key">Influences</span>
+                    <span class="profile-detail-value">Green Day, Metallica, Slayer, Amon Amarth, Dethklok, Polyphia, Fernando Sor, Paco de Lucia</span>
+                </div>
+                <div class="profile-detail current-listenings">
+                    <span class="profile-detail-key">Current Listenings</span>
+                    <span class="profile-detail-value">Periphery, Archspire, Thy Art is Murder, Allegaeon, Electric Wizard, Havok, Stoned Jesus, Witchcraft, Wage War, Northlane, Monuments</span>
+                </div>
+                <div class="profile-detail gear">
+                    <span class="profile-detail-key">Gear</span>
+                    <span class="profile-detail-value">PRS Tremonti SE ("Onyx"), Peavey 6505+ 120W Head (Fenrir), TC Electronics Flashback Mini Delay, Marshall MG412S Cabinet, Dunlop Jazz III Nylon Max-Grip picks</span>
+                </div>
+            </div>
         </div>
     </section>
 </div>
