@@ -1,0 +1,40 @@
+#members .profile {
+    height: 400px;
+    background-size: cover;
+    background-position: center top;
+    color :#bbb;
+    transition: .2s ease-in;
+}
+#members .profile:hover {
+    color :#fff;
+}
+
+#members .profile .name {
+    font-size: 2em;
+    text-align: center;
+    width: 130px;
+    padding: 10px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.12rem solid;
+}
+
+#members .profile#rob {
+    background-image: url('../images/rob_profile.jpg');
+}
+
+#members .profile#leo {
+    background-image: url('../images/leo_profile.jpg');
+}
+
+#members .profile#marius {
+    background-image: url('../images/marius_profile.jpg');
+}
+
+#members .profile#dennis {
+    background-image: url('../images/dennis_profile.jpg');
+}
